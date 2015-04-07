@@ -1,3 +1,4 @@
+require_relative "spec_helper.rb"
 require './car'
 
 describe Car do
@@ -20,3 +21,9 @@ describe "#start" do
   end
 end
 
+describe "#stop_engine" do
+  it "should turn the cars engine off" do
+    car = Car.new
+    expect(car.stop_engine).to eq "the car comes to a halt"
+  end
+end

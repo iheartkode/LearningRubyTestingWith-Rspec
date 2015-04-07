@@ -1,9 +1,13 @@
 class Car
   def horn
-    return "Beep Beep"
+   "Beep Beep"
   end
 
   def start
-    return "vroom vroom"
+    "vroom vroom"
+  end
+
+  def stop_engine
+    "the car comes to a halt"
   end
 end
